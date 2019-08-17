@@ -799,3 +799,6 @@ se(\hat{\theta}) = \sqrt{Var_{\hat{\theta}}(\hat{\theta})}
 \[
 MSE(\hat{\theta}) = E\{(\hat{\theta} - \theta)^2\}
 \]
+
+
+test test
