@@ -416,15 +416,6 @@ for \(y\) such that \(f_X\{h^{-1}(y)\} > 0\)
 | Gamma - \(Gamma(\alpha,\beta)\) 	| Continuous 	| \(\alpha,\beta\) 	| \(\frac{e^{-x/\beta}x^{\alpha-1}}{\Gamma(\alpha)\beta^\alpha }\) 	| \(x > 0\)                  	| \(\alpha\beta\)   	| \(\alpha\beta^2\)                              	| Generalisation of the exponential.                                                	|
 
 
-## Chebyshev's Inequality 
-
-Chebychev's Inequality is "the probability that \(X\) is more than \(k\) standard deviations from its mean."
-
-Mathematically, it is expressed as:
-\[
-Pr(|X-\mu| >k\sigma) \leq \frac{1}{k^2}
-\]
-
 
 # Chapter 4: Bivariate Distributions
 
