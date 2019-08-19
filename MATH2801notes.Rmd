@@ -415,6 +415,17 @@ for \(y\) such that \(f_X\{h^{-1}(y)\} > 0\)
 | Normal - \(N(\mu,\sigma^2)\)    	| Continuous 	| \(\mu,\sigma^2\) 	| \(\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)  	| \(\infty > x > -\infty \)  	| \(\mu\)           	| \(\sigma^2\)                                   	| Useful for some variables (e.g. height) but mostly for inference.                 	|
 | Gamma - \(Gamma(\alpha,\beta)\) 	| Continuous 	| \(\alpha,\beta\) 	| \(\frac{e^{-x/\beta}x^{\alpha-1}}{\Gamma(\alpha)\beta^\alpha }\) 	| \(x > 0\)                  	| \(\alpha\beta\)   	| \(\alpha\beta^2\)                              	| Generalisation of the exponential.                                                	|
 
+
+## Chebyshev's Inequality 
+
+Chebychev's Inequality is "the probability that \(X\) is more than \(k\) standard deviations from its mean."
+
+Mathematically, it is expressed as:
+\[
+Pr(|X-\mu| >k\sigma) \leq \frac{1}{k^2}
+\]
+
+
 # Chapter 4: Bivariate Distributions
 
 Observations are often taken in pairs \(\rightarrow\) one observation of two variables
@@ -431,7 +442,7 @@ f_{X,Y}(x,y) = Pr(X=x,Y=y)
 ### Solving Discrete Joint probability problems
 
 1. Tabulate the variable
-2. Work out the joint probabilites by multiplying them
+2. Work out the joint probabilities by multiplying them
 3. Read either the single cell or the addition of the row/col
 
 ## Joint Density Functions
@@ -447,13 +458,13 @@ for any subset \(A\) of \(\mathbb{R}^2\)
 
 1. Figure out the area you want to integrate over
 
-2. Insert the limits into the intagrals of the joint density function
+2. Insert the limits into the integrals of the joint density function
 
 3. Integrate with respect to x and Integrate with respect to y (using the limits)
 
 4. Solve
 
-Alterntaitvly you could integrate with respect to x and y and then substitute the values into the new, integrated equation
+Alternately you could integrate with respect to x and y and then substitute the values into the new, integrated equation
 
 ## Marginal Probability/Density Functions
 
@@ -488,14 +499,14 @@ Firstly Recall Bayes Rule:
 P(A|B) = \frac{P(B|A)P(A)}{P(B)} = \frac{P(A \cap B)}{P(B)}, \text{ if } P(B) \neq 0 
 \]
 
-The following applications are just applications of this rule to discrete and continous probabilites
+The following applications are just applications of this rule to discrete and continuous probabilities
 ### Discrete
 
 \[
 f_{X|Y}(x|y) = Pr(X = x | Y = y) = \frac{Pr(X = x , Y = y)}{Pr(Y=y)} = \frac{f_{X,Y}(x,y)}{f_Y(y)}
 \]
 
-The oppisite is also true for \(f_{Y|X}(y|x)\).
+The opposite is also true for \(f_{Y|X}(y|x)\).
 
 
 \[
@@ -507,7 +518,7 @@ Pr(Y \in A |X = x) = \sum_{y \in A} f_{Y|X}(y|X = x)
 \[
 f_{X|Y}(x|Y=y) = \frac{f_{X,Y}(x,y)}{f_Y(y)}
 \]
-The oppisite is also true for \(f_{Y|X}(y| X = x)\).
+The opposite is also true for \(f_{Y|X}(y| X = x)\).
 
 \[
 Pr(a \leq Y \leq b | X = x) = \int_a^b f_{Y|X}(y|x) dy
@@ -554,7 +565,7 @@ This also applies to \(Var (Y|X =x) \)
 
 ### Independent Random Variables
 
-A Varible is independent if and only if:
+A Variable is independent if and only if:
 \[
 f_{Y|X}(y|x) = f_Y(y)
 \]
@@ -586,7 +597,7 @@ Cov(X,Y) = E\{(X-\mu_X)(Y-\mu_Y)\} \\
 \text{where } \mu_X = E(X) \text{ and } \mu_Y = E(Y)
 \]
 
-The covarince measures how \(X\) and \(Y\) vary together lineraly. If it's \(> 0\) then \(X\) and \(Y\) are positively associated.(ie: They move along their axis the same way \(\rightarrow\) if \(X\) is big then \(Y\) will be big). 
+The covariance measures how \(X\) and \(Y\) vary together linearly. If it's \(> 0\) then \(X\) and \(Y\) are positively associated.(ie: They move along their axis the same way \(\rightarrow\) if \(X\) is big then \(Y\) will be big). 
 
 The inverse is true for \(< 0\) \(\rightarrow\) if \(X\) is small then \(Y\) will be big).
 
@@ -596,7 +607,7 @@ Here are 2 more results from the covariance:
 \[
 Cov(X,X) = Var(X)
 \]
-this one is kinda self explonatry 
+this one is kinda self explanatory 
 
 
 \[
@@ -632,7 +643,7 @@ Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{Var(X) \times Var(Y)}}
 
 The correlation measures the strength of the relationship between \(X\) and \(Y\).
 
-If \(Corr(X,Y) = 0\) then the two varibles are uncorrelated.
+If \(Corr(X,Y) = 0\) then the two variables are uncorrelated.
 
 Correlation will *always* lie between -1 and 1. As it moves away from zero the relationship becomes *stronger*. When Correlation reaches -1 or 1 the to variables are *linearly correlated* meaning that they can be expressed in the form \(Y = a+bX\).
 
