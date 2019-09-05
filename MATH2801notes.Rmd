@@ -781,7 +781,6 @@ m_{\sum^{n}_{i = 1}}X_i(u) =\prod_{i=1}^{n}m_{X_{i}}(\frac{u}{n})
 
 
 
-
 # Chapter 7
 
 ## Bias
@@ -802,5 +801,3 @@ se(\hat{\theta}) = \sqrt{Var_{\hat{\theta}}(\hat{\theta})}
 MSE(\hat{\theta}) = E\{(\hat{\theta} - \theta)^2\}
 \]
 
-
-# Other thing
